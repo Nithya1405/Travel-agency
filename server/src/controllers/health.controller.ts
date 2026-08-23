@@ -10,6 +10,7 @@ export const getHealth = (req: Request, res: Response): void => {
     uptime: Math.floor(process.uptime()),
     environment: config.nodeEnv,
     version: '1.0.0',
+    database: 'connected',
   };
 
   ApiResponse.success<IHealthStatus>(res, 'Natarajan Travel Agency API is operating normally', healthData);

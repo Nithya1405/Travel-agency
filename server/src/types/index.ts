@@ -29,7 +29,7 @@ export interface ICar {
   updatedAt?: Date;
 }
 
-export interface ICarDocument extends ICar, Document {
+export interface ICarDocument extends Omit<Document, 'model'>, ICar {
   _id: Types.ObjectId;
 }
 

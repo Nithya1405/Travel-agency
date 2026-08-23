@@ -27,5 +27,8 @@
     "tailwind"
   ],
   "author": "Natarajan Travel Agency Engineering Team",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^7.0.2"
+  }
 }
